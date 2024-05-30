@@ -19,12 +19,12 @@
   <p align="center">
     A project to manage kiosk submissions and email notifications!
     <br />
-    <a href="https://github.com/your_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/StrackVibes/Arc-Link"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/your_username/repo_name">View Demo</a>
     ·
-    <a href="https://github.com/your_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/StrackVibes/Arc-Link/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/your_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
@@ -90,7 +90,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/repo_name.git
+   git clone https://github.com/StrackVibes/Arc-Link.git
    ```
 2. Install required packages
    ```sh
