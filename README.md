@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/your_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Kiosk Submission Project</h3>
@@ -57,7 +57,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://ibb.co/K7SzmVx)
 
 This project is designed to handle kiosk submissions and send email notifications using Google Gmail API. It also displays random motivational quotes upon successful submission.
 
