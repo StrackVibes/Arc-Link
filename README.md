@@ -121,7 +121,7 @@ Navigate to `http://localhost:8000` in your web browser to access the kiosk subm
 - [ ] Enhance the UI with more styles
 - [ ] Implement user authentication
 
-See the [open issues](https://github.com/your_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/StrackVibes/Arc-Link/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +150,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/StrackVibes/Arc-Link](https://github.com/StrackVibes/Arc-Link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,15 +168,15 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/your_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/your_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/your_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/your_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/your_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/your_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/your_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/your_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/StrackVibes/Arc-Link.svg?style=for-the-badge
+[contributors-url]: https://github.com/StrackVibes/Arc-Link/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/StrackVibes/Arc-Link.svg?style=for-the-badge
+[forks-url]: https://github.com/StrackVibes/Arc-Link/network/members
+[stars-shield]: https://img.shields.io/github/stars/StrackVibes/Arc-Link.svg?style=for-the-badge
+[stars-url]: https://github.com/StrackVibes/Arc-Link/stargazers
+[issues-shield]: https://img.shields.io/github/issues/StrackVibes/Arc-Link.svg?style=for-the-badge
+[issues-url]: https://github.com/StrackVibes/Arc-Link/issues
+[license-shield]: https://img.shields.io/github/license/StrackVibes/Arc-Link.svg?style=for-the-badge
 [license-url]: https://github.com/StrackVibes/Arc-Link/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your_username
