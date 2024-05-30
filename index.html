@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 CS Help Desk Kiosk</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hero">
+    <div class="container">
+        <button id="resetButton">Reset</button>
+        <h1>Welcome to the 18 CS Help Desk Kiosk</h1>
+        <form id="userForm" action="/submit" method="post">
+            <div id="initialInquiry">
+                <label>Do you have a ticket number associated with this visit?</label>
+                <button type="button" data-next="ticketYes">Yes</button>
+                <button type="button" data-next="appointmentQuestion">No</button>
+            </div>
+
+            <div id="appointmentQuestion" class="hidden">
+                <label>Do you have an appointment?</label>
+                <button type="button" data-next="customerName">Yes</button>
+                <button type="button" data-next="noAppointmentDetails">No, Proceed</button>
+            </div>
+
+            <div id="ticketYes" class="hidden">
+                <label for="customerNameTicket">Customer Name:</label>
+                <input type="text" id="customerNameTicket" name="customerName" placeholder="Colin Douglas">
+                <br>
+                <label for="rankTicket">Pay Grade:</label>
+                <select id="rankTicket" name="rank">
+                    <option value="">Select Rank</option>
+                    <optgroup label="Enlisted (E)">
+                        <option value="E-1">E-1</option>
+                        <option value="E-2">E-2</option>
+                        <option value="E-3">E-3</option>
+                        <option value="E-4">E-4</option>
+                        <option value="E-5">E-5</option>
+                        <option value="E-6">E-6</option>
+                        <option value="E-7">E-7</option>
+                        <option value="E-8">E-8</option>
+                        <option value="E-9">E-9</option>
+                    </optgroup>
+                    <optgroup label="Officers (O)">
+                        <option value="O-1">O-1</option>
+                        <option value="O-2">O-2</option>
+                        <option value="O-3">O-3</option>
+                        <option value="O-4">O-4</option>
+                        <option value="O-5">O-5</option>
+                        <option value="O-6">O-6</option>
+                        <option value="O-7">O-7</option>
+                        <option value="O-8">O-8</option>
+                        <option value="O-9">O-9</option>
+                    </optgroup>
+                    <optgroup label="Warrant Officers (W)">
+                        <option value="W-1">W-1</option>
+                        <option value="W-2">W-2</option>
+                        <option value="W-3">W-3</option>
+                        <option value="W-4">W-4</option>
+                        <option value="W-5">W-5</option>
+                    </optgroup>
+                    <option value="Civ/Ctr">Civilian/Contractor (Civ/Ctr)</option>
+                </select>
+                <br>
+                <label for="dutyPhoneTicket">Duty Phone:</label>
+                <input type="tel" id="dutyPhoneTicket" name="dutyPhone" placeholder="876-5309">
+                <br>
+                <label for="unitTicket">Squadron:</label>
+                <input type="text" id="unitTicket" name="unit" placeholder="432nd Aircraft Communication Maintenance Squadron">
+                <br>
+                <label for="vesdTicketNumber">vESD Ticket Number:</label>
+                <input type="text" id="vesdTicketNumber" name="vesdTicketNumber" placeholder="VESD-123456">
+                <br>
+                <label for="deviceDropOffToggle">Device drop-off?</label>
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="deviceDropOffToggle" name="deviceDropOff" value="no">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div id="deviceDropOffFields" class="device-drop-off-fields">
+                    <label for="serialNumber">Serial Number of device(s):</label>
+                    <input type="text" id="serialNumber" name="serialNumber" placeholder="SN1234567890">
+                    <br>
+                    <label for="makeModel">Make and Model:</label>
+                    <input type="text" id="makeModel" name="makeModel" placeholder="Dell Latitude 5520">
+                    <br>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div id="customerName" class="hidden">
+                <label for="customerNameNoTicket">Customer Name:</label>
+                <input type="text" id="customerNameNoTicket" name="customerName" placeholder="Allison Criss">
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div id="noAppointmentDetails" class="hidden">
+                <label for="customerNameNoAppointment">Customer Name:</label>
+                <input type="text" id="customerNameNoAppointment" name="customerName" placeholder="Shane Strack">
+                <br>
+                <label for="rankNoAppointment">Pay Grade:</label>
+                <select id="rankNoAppointment" name="rank">
+                    <option value="">Select Rank</option>
+                    <optgroup label="Enlisted (E)">
+                        <option value="E-1">E-1</option>
+                        <option value="E-2">E-2</option>
+                        <option value="E-3">E-3</option>
+                        <option value="E-4">E-4</option>
+                        <option value="E-5">E-5</option>
+                        <option value="E-6">E-6</option>
+                        <option value="E-7">E-7</option>
+                        <option value="E-8">E-8</option>
+                        <option value="E-9">E-9</option>
+                    </optgroup>
+                    <optgroup label="Officers (O)">
+                        <option value="O-1">O-1</option>
+                        <option value="O-2">O-2</option>
+                        <option value="O-3">O-3</option>
+                        <option value="O-4">O-4</option>
+                        <option value="O-5">O-5</option>
+                        <option value="O-6">O-6</option>
+                        <option value="O-7">O-7</option>
+                        <option value="O-8">O-8</option>
+                        <option value="O-9">O-9</option>
+                    </optgroup>
+                    <optgroup label="Warrant Officers (W)">
+                        <option value="W-1">W-1</option>
+                        <option value="W-2">W-2</option>
+                        <option value="W-3">W-3</option>
+                        <option value="W-4">W-4</option>
+                        <option value="W-5">W-5</option>
+                    </optgroup>
+                    <option value="Civ/Ctr">Civilian/Contractor (Civ/Ctr)</option>
+                </select>
+                <br>
+                <label for="dutyPhoneNoAppointment">Duty Phone:</label>
+                <input type="tel" id="dutyPhoneNoAppointment" name="dutyPhone" placeholder="876-5309">
+                <div class="toggle-with-input">
+                    <label for="deployerTDYToggle">Deployer/TDY?</label>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="deployerTDYToggle" name="deployerTDY" value="no">
+                            <span class="slider round"></span>
+                        </label>
+                        <div id="homeStationField" class="hidden">
+                            <input type="text" id="homeStation" name="homeStation" placeholder="Hurlburt Field">
+                        </div>
+                    </div>
+                </div>
+
+                <label for="unitNoAppointment">Unit:</label>
+                <input type="text" id="unitNoAppointment" name="unit" placeholder="39th Information Operations Squadron">
+                <br>
+                <label for="reasonForVisit">Reason for visit:</label>
+                <select id="reasonForVisit" name="reasonForVisit">
+                    <option value="">Please select a reason</option>
+                    <option value="iPhone">iPhone</option>
+                    <option value="Account Access">Account Access</option>
+                    <option value="Computer Reimage">Computer Reimage</option>
+                    <option value="Add device to domain/network">Add device to domain/network</option>
+                    <option value="Out-processing">Out-processing</option>
+                    <option value="General Questions">General Questions</option>
+                </select>
+                <div id="accountAccessFields" class="hidden">
+                    <br>
+                    <label>SIPRNet or NIPRNet?</label>
+                    <div class="styled-radio">
+                        <input type="radio" id="siprnet" name="networkType" value="SIPRNet">
+                        <label for="siprnet">SIPRNet</label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" id="niprnet" name="networkType" value="NIPRNet">
+                        <label for="niprnet">NIPRNet</label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" id="both" name="networkType" value="Both">
+                        <label for="both">Both</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="completed2875">Have you submitted a fully completed 2875?
+                        <div class="tooltip">?
+                            <span class="tooltiptext">A 2875 form is required for account access requests. It ensures proper authorization and documentation.</span>
+                        </div>
+                    </label>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="completed2875" name="completed2875" value="no">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="computerReimageFields" class="hidden">
+                    <br>
+                    <label>Are you here for drop-off or pick-up?</label>
+                    <div class="styled-radio">
+                        <input type="radio" id="dropOff" name="reimageType" value="Drop-off">
+                        <label for="dropOff">Drop-off</label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" id="pickUp" name="reimageType" value="Pick-up">
+                        <label for="pickUp">Pick-up</label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" id="swapping" name="reimageType" value="Swapping">
+                        <label for="swapping">Swapping</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="reimageSerialNumber">Serial Number of system(s):</label>
+                    <input type="text" id="reimageSerialNumber" name="reimageSerialNumber" placeholder="SN1234567890">
+                    <br>
+                    <label for="specialSoftware">Do you require any special software? If so, please provide the name(s).</label>
+                    <textarea id="specialSoftware" name="specialSoftware" placeholder="Software name(s)"></textarea>
+                    <br>
+                    <label for="consentReimage">I understand that reimaging will erase all data on the system:</label>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="consentReimage" name="consentReimage" value="no">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="addDeviceFields" class="hidden">
+                    <br>
+                    <label for="offDomainTime">How long has it been off the domain/network?</label>
+                    <select id="offDomainTime" name="offDomainTime">
+                        <option value="">Select duration</option>
+                        <option value="≤ 1 week">≤ 1 week</option>
+                        <option value="≤ 1 month">≤ 1 month</option>
+                        <option value="≤ 3 months">≤ 3 months</option>
+                    </select>
+                </div>
+                <div id="generalQuestionsFields" class="hidden">
+                    <br>
+                    <label for="additionalDetails">Additional details or information:</label>
+                    <textarea id="additionalDetails" name="additionalDetails" placeholder="Provide additional details or information here..."></textarea>
+                </div>
+                <div id="iPhoneFields" class="hidden">
+                    <label for="firstTimeiPhone">Is this your first time getting an iPhone configured on this base?</label>
+                    <label class="switch">
+                        <input type="checkbox" id="firstTimeiPhone" name="firstTimeiPhone" value="no">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <label for="iPhoneSerialNumber">iPhone Serial Number:</label>
+                    <input type="text" id="iPhoneSerialNumber" name="iPhoneSerialNumber">
+                    <br>
+                    <label for="knowCredentials">Do you know the iPhone’s unlock code and Apple ID Password?</label>
+                    <label class="switch">
+                        <input type="checkbox" id="knowCredentials" name="knowCredentials" value="no">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <label for="phoneBackedUp">Is the phone backed-up?</label>
+                    <label class="switch">
+                        <input type="checkbox" id="phoneBackedUp" name="phoneBackedUp" value="no">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="watermark">Powered by Project Arc</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
