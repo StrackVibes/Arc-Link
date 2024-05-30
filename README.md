@@ -177,7 +177,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [issues-shield]: https://img.shields.io/github/issues/your_username/repo_name.svg?style=for-the-badge
 [issues-url]: https://github.com/your_username/repo_name/issues
 [license-shield]: https://img.shields.io/github/license/your_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/your_username/repo_name/blob/master/LICENSE.txt
+[license-url]: https://github.com/StrackVibes/Arc-Link/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://i.ibb.co/4M3gJ4R/Screenshot-2024-05-30-004254.png
