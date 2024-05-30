@@ -10,7 +10,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/your_username/repo_name">
+  <a href="https://github.com/StrackVibes/Arc-Link">
     <img src="favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
