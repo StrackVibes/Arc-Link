@@ -57,7 +57,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot](https://i.ibb.co/Mf2wDhC/anim.gif)
+[![Product Name Screen Shot][product-screenshot](https://i.ibb.co/Mf2wDhC/anim.gif)]
 
 This project is designed to handle kiosk submissions and send email notifications using Google Gmail API. It also displays random motivational quotes upon successful submission.
 
