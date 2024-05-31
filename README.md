@@ -180,4 +180,4 @@ Project Link: [https://github.com/StrackVibes/Arc-Link](https://github.com/Strac
 [license-url]: https://github.com/StrackVibes/Arc-Link/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your_username
-[product-screenshot]: https://i.ibb.co/4M3gJ4R/Screenshot-2024-05-30-004254.png
+[product-screenshot]: https://i.ibb.co/Mf2wDhC/anim.gif
