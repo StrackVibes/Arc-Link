@@ -108,7 +108,7 @@ To get a local copy up and running follow these simple steps.
 
 To run the server, use the following command:
 ```sh
-python server.py
+python3 server.py
 ```
 
 Navigate to `http://localhost:8000` in your web browser to access the kiosk submission form.
